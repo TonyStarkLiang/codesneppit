@@ -1,11 +1,11 @@
 <template>
   <div class="app">
     <!--上半部-->
-    <div class="search-bar-wrap" style="height:500px;background-color: #ccc">
-      <div>
+    <div class="search-bar-wrap" style="height:400px;background-color: #ccc">
+      <div id="search-title">
         <h1>code snippet</h1>
       </div>
-      <div style="text-align: center;">
+      <div id="search-input">
         <el-row class="demo-autocomplete">
          <el-col :span="12">
     <el-autocomplete
@@ -102,5 +102,16 @@ export default {
 }
 .pagination-wrap{
   margin-top: 4%
+}
+#search-input{
+  margin:150px auto;
+  width: 700px;
+  height: 40px;
+}
+#search-title{
+  text-align: center;
+  margin-top: 30;
+  width: 600px;
+  height: 88px;
 }
 </style>
